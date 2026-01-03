@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f6f9;
+    padding: 30px;
+}
+
+.welcome {
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+#content {
+    margin-top: 40px;
+}
+
+#output {
+    margin-bottom: 20px;
+}
+
+#quizBox, #doubtBox {
+    display: none;
+    background:#f3f6f9;
+;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+#quizBox button {
+    display: block;
+    margin: 10px 0;
+    padding: 8px 14px;
+}
+
+#doubtBox textarea {
+    width: 100%;
+    height: 80px;
+}
+
+#doubtBox button {
+    margin-top: 10px;
+    padding: 8px 14px;
+}

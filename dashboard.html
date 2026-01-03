@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="dashboard">
+    <h2>WELCOME STUDENT 👋</h2>
+
+    <div class="cards">
+        <div class="card" onclick="showPlan()">
+            📘 Study Plan
+        </div>
+
+        <div class="card" onclick="startQuiz()">
+            📝 Practice Test
+        </div>
+
+        <div class="card" onclick="showPerformance()">
+            📊 Performance
+        </div>
+
+        <div class="card" onclick="askDoubt()">
+            ❓ Ask Doubt
+        </div>
+    </div>
+    <div id="quizBox" style="display:none; background:#f3f6f9; padding:20px; border-radius:10px;">
+        <h4>📝 Practice Test</h4>
+    <h4 id="question"></h4>
+    <button onclick="checkAnswer(0)" id="opt0"></button>
+    <button onclick="checkAnswer(1)" id="opt1"></button>
+    <button onclick="checkAnswer(2)" id="opt2"></button>
+</div>
+
+<div id="output"></div>
+<canvas id="perfChart" width="400" height="250"></canvas>
+
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
